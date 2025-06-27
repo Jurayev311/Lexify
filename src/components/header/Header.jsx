@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from '../../assets/logo.svg'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { LuExternalLink } from "react-icons/lu";
 
 const Header = () => {
@@ -21,10 +21,10 @@ const Header = () => {
 
           <div className='flex gap-10 text-[14px] font-semibold'>
             <div className='flex items-center gap-3 cursor-pointer'>
-              <button>Log In</button>
-              <span><LuExternalLink /></span>
+              <Link to={'/login'}>Log In</Link>
+              <Link to={'/login'}><LuExternalLink /></Link>
             </div>
-            <button className='cursor-pointer pt-[9px] pb-[9px] pl-[16px] pr-[16px] rounded-[8px] text-white bg-[#0C99FF]'>Sign Up</button>
+            <Link to={'/sign-up'} className='cursor-pointer pt-[9px] pb-[9px] pl-[16px] pr-[16px] rounded-[8px] text-white bg-[#0C99FF]'>Sign Up</Link>
           </div>
         </nav>
       </div>

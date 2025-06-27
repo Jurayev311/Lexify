@@ -4,6 +4,7 @@ import MainLayout from '../layouts/MainLayout'
 import Home from '../pages/home/Home'
 import SignUp from '../pages/signup/SignUp'
 import Login from '../pages/login/Login'
+import NotFound from '../pages/not-found/NotFound'
 
 const AppRoutes = () => {
   return (
@@ -11,9 +12,11 @@ const AppRoutes = () => {
         <Routes>
             <Route path='/' element={<MainLayout />}>
                 <Route index element={<Home />} />
+            </Route>
+            
                 <Route path='sign-up' element={<SignUp />} />
                 <Route path='login' element={<Login />} />
-            </Route>
+                <Route path='*' element={<NotFound />} />
         </Routes>
     </>
   )
