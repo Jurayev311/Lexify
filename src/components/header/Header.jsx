@@ -5,7 +5,7 @@ import { LuExternalLink } from "react-icons/lu";
 
 const Header = () => {
   return (
-    <header className='fixed top-0 left-0 w-full bg-white/50 backdrop-blur-[9px]'>
+    <header className='fixed top-0 left-0 w-full bg-white/50 backdrop-blur-[9px] z-50'>
       <div className='container'>
         <nav className='flex items-center justify-between h-[73px]'>
           <div>
@@ -21,10 +21,10 @@ const Header = () => {
 
           <div className='flex gap-10 text-[14px] font-semibold'>
             <div className='flex items-center gap-3'>
-              <button>Log In</button>
+              <button className='cursor-pointer'>Log In</button>
               <span><LuExternalLink /></span>
             </div>
-            <button className='pt-[9px] pb-[9px] pl-[16px] pr-[16px] rounded-[8px] text-white bg-[#0C99FF]'>Sign Up</button>
+            <button className='cursor-pointer pt-[9px] pb-[9px] pl-[16px] pr-[16px] rounded-[8px] text-white bg-[#0C99FF]'>Sign Up</button>
           </div>
         </nav>
       </div>
