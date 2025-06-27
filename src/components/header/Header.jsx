@@ -20,8 +20,8 @@ const Header = () => {
           </ul>
 
           <div className='flex gap-10 text-[14px] font-semibold'>
-            <div className='flex items-center gap-3'>
-              <button className='cursor-pointer'>Log In</button>
+            <div className='flex items-center gap-3 cursor-pointer'>
+              <button>Log In</button>
               <span><LuExternalLink /></span>
             </div>
             <button className='cursor-pointer pt-[9px] pb-[9px] pl-[16px] pr-[16px] rounded-[8px] text-white bg-[#0C99FF]'>Sign Up</button>
