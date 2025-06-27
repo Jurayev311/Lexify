@@ -4,7 +4,7 @@ import hero from '../../assets/hero.svg'
 const Hero = () => {
   return (
     <section className='mt-[92px]'>
-      <div className='containerL bg-[#F0F7FF] h-[699px]'>
+      <div className='containerL bg-[#F0F7FF] h-[699px] rounded-[36px]'>
 
         <div className='container flex items-center justify-center'>
 
