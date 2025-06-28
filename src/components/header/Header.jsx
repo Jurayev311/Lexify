@@ -13,10 +13,10 @@ const Header = () => {
           </div>
 
           <ul className='flex items-center gap-10 text-[14px] font-normal'>
-            <li className='hover:text-[#0C99FF] duration-150'><NavLink to={'/add-words'}>Add Words</NavLink></li>
-            <li className='hover:text-[#0C99FF] duration-150'><NavLink to={'/quizzes'}>Quizzes</NavLink></li>
-            <li className='hover:text-[#0C99FF] duration-150'><NavLink to={'/add-words'}>Statistics</NavLink></li>
-            <li className='hover:text-[#0C99FF] duration-150'><NavLink to={'/add-words'}>Plans</NavLink></li>
+            <li className='hover:text-[#0C99FF] duration-150'><NavLink to={'/admin/add-words'}>Add Words</NavLink></li>
+            <li className='hover:text-[#0C99FF] duration-150'><NavLink to={'/admin/quizzes'}>Quizzes</NavLink></li>
+            <li className='hover:text-[#0C99FF] duration-150'><NavLink to={'/admin/statistics'}>Statistics</NavLink></li>
+            <li className='hover:text-[#0C99FF] duration-150'><NavLink to={'/admin/plans'}>Plans</NavLink></li>
           </ul>
 
           <div className='flex gap-10 text-[14px] font-semibold'>
